@@ -11,7 +11,7 @@ Book Shelf:
     tag_2
     tag_3
     ...
-    tag_n               (64 chars max)
+    tag_n               (tag value 64 chars max)
     book_1
     book_2
     book_3
@@ -63,7 +63,13 @@ The only required field that **must** be filled is shelf id.
 
 #### Tag
 
-Just string value limited to 64 chars.
+Tag should always have `value` attribute with its value, like:
+```xml
+<tag value="tag1"/>
+```
+Tag content value should be always `0` and only `value` attribute should be allowed.
+
+Value attribute length should be not more than 64 characters.
 
 #### Book
 
