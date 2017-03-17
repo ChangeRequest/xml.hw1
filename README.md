@@ -120,6 +120,7 @@ Try to avoid code duplication.
 You have to create DOM Parser for the proposed XSD schema in order to be 
 able to parse XML documents into the Java POJO representation.
 
-####*Optional* task
+#### *Optional* task
+
 Add reverse implementation - create DOM structure from the Java POJO representation in order to
 save valid XML document.
